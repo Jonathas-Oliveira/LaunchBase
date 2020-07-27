@@ -1,0 +1,132 @@
+*{box-sizing: border-box;}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 10vh 40vh 800px 5vh;
+    grid-template-areas: 'h h h'
+                        '. m .'
+                        '. a .'
+                        'f f f'
+                        ;
+}
+header{
+    grid-area: h;
+}
+main{
+    grid-area: m;
+}
+aside{
+    display: flex;
+    grid-area:a;
+}
+footer{
+    grid-area: f;
+}
+.h > ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly ;
+}
+a{text-decoration: none;
+color: black;font-family: 'Roboto', sans-serif;} 
+.menu{
+    top: 25px;
+    position: absolute;
+    left: 20vw;
+    font-size: 29px;
+}
+.sobre{
+    position: absolute;
+    left: 30vw;
+    font-size: 17px;
+    top: 30px;
+}
+.receitas{
+    position:absolute;
+    left: 37vw;
+    font-size: 17px;
+    top: 30px;
+}
+
+main{
+    background-color: #FBDFDB ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding-left: 40px ;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.chef{
+    position: absolute;
+    width: 180px;
+    height: 240px;
+    left: 60vw;
+    top: 92px;
+}
+main > h1{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 80%;
+}
+.conteudo{
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    left: 28vw;
+    position: absolute;
+    top: 60vh;
+}
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+img{
+    margin-left: 18px;
+    width: 270px;
+    height: 150px;
+    border-radius: 30px;
+}
+.desc{
+    margin-left: 30px;
+    font-family:  'Roboto', sans-serif;
+}
+.by{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    opacity: 70%;
+}
+.gallery{
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color:  #EEEEEE;
+    color: black;
+    opacity: 80%;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    width: 100%;
+}

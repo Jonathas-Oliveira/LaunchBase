@@ -1,0 +1,90 @@
+*{box-sizing: border-box;}
+html,body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 7vh 40vh 400px 7vh;
+    grid-template-areas: 'h h h '
+                          '. m .'
+                          '. s .'
+                          'f f f'    
+    ;
+}
+header{
+    grid-area:h;
+    
+}
+main{
+    grid-area:m;
+    
+}
+section{
+    grid-area: s;
+    
+}
+footer{
+    grid-area: f;
+    
+}
+li{    list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.box > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu{
+    top: 15px;
+    position: absolute;
+    left: 20vw;
+    font-size: 27px;
+}
+.sobre{
+    position: absolute;
+    left: 30vw;
+    font-size: 17px;
+    top: 25px;
+}
+.receitas{
+    position:absolute;
+    left: 35vw;
+    font-size: 17px;
+    top: 25px;
+}
+main > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+}
+section > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.texto{
+    font-family: 'Roboto', sans-serif;
+    opacity: 90%;
+}
+footer{
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color:  #EEEEEE;
+    color: black;
+    opacity: 80%;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
