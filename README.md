@@ -1,6 +1,4 @@
 # LaunchBase
 Desafios concluídos-Rocketseat
-<p >
-  <img href="./assets/site1.png" width="350" >
-  
-</p>
+
+![site1](https://user-images.githubusercontent.com/68708850/88511360-0c467700-cfbb-11ea-88bd-fcedb1963379.png)
